@@ -1,0 +1,41 @@
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int array[5];
+
+// Repeat the input process until the 114th element is reached
+// printf("What's on your mind today?\n Tell me your numbers i would love to help you  \nstay smiling :)\n ");
+// for (int i = 0; i <= 114; ++i)
+// {
+//     scanf("%d", &array[i]);
+// }
+// is k zariye sey sary elements array k print hoon gy 1 saath
+// con: serail number yaad nhi  rahey ga
+// pro: sb ko all at once recheck kia ja sakta hy
+//*************************************************************//
+
+#include <stdio.h>
+
+int main()
+{
+    int array[5];
+    for (int i = 0; i < 5; ++i) //<5 rakha hy tu matlb number  5 hoon gy but index 4 tk hoon gy ok remmeber this index thing
+    {
+        printf("Number of statements  in %d chapter : ", i + 1);
+        scanf("%d", &array[i]);
+    }
+    // //is k zariye sey 1 by 1 elemenets print hoon gy
+    // //pro: serail number yaad rahey ga
+    // //con: sb ko all at once recheck karna mushkil hy
+    // aur yeah lein recheck ka masla is  next loop sey hal ho gy
+    // ab is trha serial number ka bhi aur  recheck krny ka bhi dono masly hal
+    printf(" Recheck your whole array\n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("%d ", array[i]);
+    }
+
+    return 0;
+}
