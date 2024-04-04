@@ -133,7 +133,7 @@ int main()
         5,
         6};
     int count_fib = 0, count_nonfib = 0; // count variables
-
+                                         // // to take input from user
     // for (i = 0; i < 114; ++i)
     // {
     //     printf("Enter the number of statements in %d chapter: ", i + 1);
@@ -158,7 +158,16 @@ int main()
         }
     }
     printf("\n");
-
+    printf(" and these are index numbers \n");
+    for (i = 0; i < 114; i++)
+    {
+        if (isFibonacci(array[i]))
+        {
+            printf("%d ", i);
+            count_fib++;
+        }
+    }
+    printf("\n");
     printf(" Numbers given below are not fibonacci numbers!\n");
     for (i = 0; i < 114; i++)
     {
@@ -169,7 +178,16 @@ int main()
         }
     }
     printf("\n");
-
+    printf(" and these are index numbers \n");
+    for (i = 0; i < 114; i++)
+    {
+        if (!isFibonacci(array[i]))
+        {
+            printf("%d ", i);
+            count_nonfib++;
+        }
+    }
+    printf("\n");
     printf("Total Fibonacci numbers: %d\n", count_fib);
     printf("Total Non-Fibonacci numbers: %d\n", count_nonfib);
 
